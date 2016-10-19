@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Videos</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+      <div id="object" class="slideRight">
+        <img src = "me.gif">
+        </div>
+        <br>
+        <p> Examples of things I've learned and tried with video editing programs.</p>
+        <br>
+        <p>You should visit my <a href="https://vine.co/u/1382520178826465280"> vine. </a>
+        <img style="height:90px;width:110px"  src= "happypuppy.gif"> 
+        <p style="font-size: 7px" class="view"><a href="http://github.com/orderedlist/minimal">Theme Credit</a></p>
+      </header>
+      <section>
+        <video width="320" height="240" controls>
+        <source src="videosamples/blm.mp4" type="video/mp4">
+        </video>
+        <p> #blacklivesmatter</p>
+
+        <video width="320" height="240" controls>
+        <source src="videosamples/bday.mp4" type="video/mp4">
+        </video>
+        <p> nice birthday. </p>
+        <video width="320" height="240" controls>
+        <source src="videosamples/eltonjohnsong.mp4" type="video/mp4">
+        </video>
+        <p> A simple vine-type edit. </p>
+
+        <video width="320" height="240" controls>
+        <source src="videosamples/strangerthings.mp4" type="video/mp4">
+        </video>
+        <p> Another simple vine-type edit. </p>
+
+        
+
+      
+      </section>
+    </div>
+    <script>
+  $(window).scroll(function() {
+    $('#animatedElement').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
+</script>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
